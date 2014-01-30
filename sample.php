@@ -21,16 +21,16 @@ $buffer->open();
 $client->execute("select column1,column2,otherColumns " .
                  "from mytable where column1='whatever' and columns2 like '%whatever%'");
 
-//Fetching all result:
+// Fetching all result:
 $rows = $client->fetchAll();
 
-//May you want to perform an fetchOne(), whatever.
-//$client->fetchOne();
+// May you want to perform an fetchOne(), whatever.
+// $client->fetchOne();
 
 
  // iterate on the result
 foreach ($rows as $row) {
-    //Spliting by tab(returns a tsv like row) to array.
+    // Spliting by tab(returns a tsv like row) to array.
     $row = preg_split('/\s+/',$value);
     
     // Do whatever you want to do with this row, here
