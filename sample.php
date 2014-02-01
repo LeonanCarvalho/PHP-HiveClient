@@ -1,5 +1,5 @@
 <?php
-set_time_limit(0); 
+set_time_limit(0);  //Its important because the cosmos's maping reduce task cam take a little long with a big amount of data
 // set THRIFT_ROOT to php directory of the hive distribution
 $GLOBALS['THRIFT_ROOT'] = 'lib/hive';
 // load the required files for connecting to Hive
